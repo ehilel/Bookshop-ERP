@@ -16,7 +16,7 @@ const translations = {
         title: "חנות ספרים",
         languageSwitcher: "החלפת שפה",
         addBook: "+ ספר חדש",
-        id: "תעודת זהות",
+        id: ".ת.ז",
         titleColumn: "כותרת",
         priceColumn: "מחיר",
         read: "קרא",
