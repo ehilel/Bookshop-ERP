@@ -3,7 +3,7 @@ let currentPage = 1;
 let bookID = 10;
 let sortByTitleAsc = true;
 let sortByPriceAsc = true;
-let currentLanguage = 'he';
+let currentLanguage = 'en';
 
 function displayBooks() {
     let books = getBooks();
@@ -140,26 +140,17 @@ function updateTexts() {
 
     document.getElementById('languageSwitcher').innerText = translations[currentLanguage].languageSwitcher;
 
-    const headers = document.querySelectorAll('.book-list-h div');
-    headers[0].innerText = translations[currentLanguage].id;
-    headers[1].innerText = translations[currentLanguage].titleColumn;
-    headers[2].innerText = translations[currentLanguage].priceColumn;
-    headers[3].innerText = translations[currentLanguage].read;
-    headers[4].innerText = translations[currentLanguage].update;
-    headers[5].innerText = translations[currentLanguage].delete;
+    // const headers = document.querySelectorAll('.book-list-h div');
+    // headers[0].innerText = translations[currentLanguage].id;
+    // headers[1].innerText = translations[currentLanguage].titleColumn;
+    // headers[2].innerText = translations[currentLanguage].priceColumn;
+    // headers[3].innerText = translations[currentLanguage].read;
+    // headers[4].innerText = translations[currentLanguage].update;
+    // headers[5].innerText = translations[currentLanguage].delete;
 
     const details = document.getElementById('bookDetails');
     details.querySelector('h3').innerText = translations[currentLanguage].bookDetails;
     details.querySelector('p').innerText = translations[currentLanguage].selectBook;
-
-    // document.title = translations[currentLanguage].read;
-    // document.getElementById('read').innerText = translations[currentLanguage].languageSwitcher;
-
-    // document.title = translations[currentLanguage].update;
-    // document.getElementById('update').innerText = translations[currentLanguage].languageSwitcher;
-
-    // document.title = translations[currentLanguage].delete;
-    // document.getElementById('delete').innerText = translations[currentLanguage].languageSwitcher;
 
 
 }
