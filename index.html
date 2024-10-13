@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop ERP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Bookshop ERP</h1>
+        <h2>
+            <button id="addBookBtn">+ New book</button>
+            <button id="languageSwitcher">Switch Language</button>
+        </h2>
+    </header>
+    <div class="container">
+
+        <div class="main-content">
+            <div id="book-tabal" class="book-tabal">
+                <div class="book-list-h">
+                    <div>id</div>
+                    <div>Title <button onclick="sortTitle()" id="sortTitle">▲</button></div>
+                    <div>Price: <button onclick="sortPrice()" id="sortPrice">▲</button></div>
+                    <div>Read</div>
+                    <div>Update</div>
+                    <div>Delete</div>
+                    
+                </div>
+                <div id="book-list" class="book-list-t"></div>
+
+            </div>
+
+            <div id="pagination" class="pagination">
+                <button id="prevPage">Back</button>
+                <span id="pageNumbers"></span>
+                <button id="nextPage">Next</button>
+            </div>
+        </div>
+        <div class="book-details" id="bookDetails">
+            <h3>Book Details</h3>
+            <p>Select a book to see details.</p>
+        </div>
+
+
+    </div>
+
+    <script src="view.js"></script>
+    <script src="moodl.js"></script>
+    <script src="controller.js"></script>
+    
+</body>
+
+</html>
